@@ -3,8 +3,15 @@
 
 int main()
 {
-    int inventory[6] = {12, 0, 45, 3, 99, 1};
+    int inventory[6];
     int out_of_stock_count = 0;
+
+    // Taking user input for inventory
+    for (int i = 0; i < 6; i++)
+    {
+        printf("Enter stock for Product %d: ", i);
+        scanf("%d", &inventory[i]);
+    }
 
     for (int i = 0; i < 6; i++)
     {
@@ -21,6 +28,7 @@ int main()
             out_of_stock_count++;
         }
     }
+
     printf("Total products out of stock are: %d\n", out_of_stock_count);
 
     for (int i = 0; i < 6; i++)
@@ -30,11 +38,14 @@ int main()
             inventory[i] = inventory[i] + 5;
         }
     }
+
     printf("Inventory after restocking is:\n");
     printf("---------------------------------------------------\n");
+
     for (int j = 0; j < 6; j++)
     {
         printf("Product %d stock: %d\n", j, inventory[j]);
     }
+
     return 0;
-}
+}12
