@@ -24,3 +24,7 @@ A lightweight CLI application written in C that simulates a warehouse inventory 
   * Hospitals for medical supplies
   * Restaurants for ingredients
   * Offices for stationery/equipment
+# Project Thumbnail
+The project thumbnail was created with the assistance of AI
+for visual presentation. The application itself was developed
+in C.
